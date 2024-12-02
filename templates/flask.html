@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body class="body">
+    <nav class="nav">
+        <a href="{{ url_for('home') }}"><h1>Backend page</h1></a>
+        <ul>
+            <li><a href="{{ url_for('back') }}">What's backend?</a></li>
+            <li><a href="{{ url_for('explain') }}">Flask</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section class="textside">
+            <h1 class="textside-title">What's flask?</h1>
+            <div class="textside-div">
+                <p class="textside-paragraph">Flask is a lightweight, micro web framework for Python, designed to make it easy to build simple web applications quickly. Flask provides tools and libraries for routing, templating, and handling requests, but it leaves out a lot of other functionality, giving developers the flexibility to choose their preferred tools or add only what’s needed. This simplicity and modularity make Flask ideal for small to medium projects or for building APIs.</p>
+            </div>
+        </section>
+        <section>
+            <img class="image-flask" src="{{url_for('static', filename='images/bobcaveman.png')}}" alt="bob">
+        </section>
+    </article>
+</body>
+</html>

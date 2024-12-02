@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body class="body">
+    <nav class="nav">
+        <a href="{{ url_for('home') }}"><h1>Backend page</h1></a>
+        <ul>
+            <li><a href="{{ url_for('back') }}">What's backend?</a></li>
+            <li><a href="{{ url_for('explain') }}">Flask</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section class="textside">
+            <h1 class="textside-title">About me</h1>
+            <div class="textside-div">
+                <p class="textside-paragraph">I'm 20 years old and currently studying computer systems engineering. I love music, skateboarding, video games, and programming. Balancing my studies with these hobbies gives me a unique perspective mixing creativity and technical skills helps me approach coding and problem-solving in fresh ways. It’s exciting to explore where my passions and engineering studies can take me.</p>
+            </div>
+        </section>
+        <section>
+            <img src="{{url_for('static', filename='images/bobcaveman.png')}}" alt="bob">
+        </section>
+    </article>
+</body>
+</html>

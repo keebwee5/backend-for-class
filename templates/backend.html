@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body class="body">
+    <nav class="nav">
+        <a href="{{ url_for('home') }}"><h1>Backend page</h1></a>
+        <ul>
+            <li><a href="{{ url_for('back') }}">What's backend?</a></li>
+            <li><a href="{{ url_for('explain') }}">Flask</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section class="textside">
+            <h1 class="textside-title">What's backend?</h1>
+            <div class="textside-div">
+                <p class="textside-paragraph">Backend refers to the server-side part of a web application that handles data processing, storage, and business logic. It involves managing databases, server configuration, authentication, and API integration, and it responds to user requests by sending data or processing actions. The backend communicates with the frontend (user interface) to ensure a seamless user experience, often being built with languages like Python, JavaScript (Node.js), Ruby, or Java.</p>
+            </div>
+        </section>
+        <section>
+            <img class="image-backend" src="{{url_for('static', filename='images/bobcaveman.png')}}" alt="bob">
+        </section>
+    </article>
+</body>
+</html>
